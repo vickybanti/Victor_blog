@@ -16,8 +16,11 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import backref
 
 Base = declarative_base()
+def create_app():
+    app = Flask(__name__)
+    return app
 
-app = Flask(__name__)
+app = create_app()
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 ckeditor = CKEditor(app)
 Bootstrap(app)
