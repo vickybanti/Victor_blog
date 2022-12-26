@@ -13,7 +13,7 @@ class CreatePostForm(FlaskForm):
     submit = SubmitField("Submit Post")
 
 class LoginForm(FlaskForm):
-    email = StringField("Input email", validators=[InputRequired(), Email(message="Invalid email", allow_smtputf8=True)])
+    email = StringField("Input email", validators=[InputRequired(), Email(message="Invalid email")])
     password = PasswordField("Input password", validators=[DataRequired()])
     submit = SubmitField("Log in")
 
