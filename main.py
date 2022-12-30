@@ -96,7 +96,7 @@ def admins(f):
     return decorated_function
 
 
-@app.route('/', method=["GET"])
+@app.route('/')
 def get_all_posts():
     posts = BlogPost.query.all()
     return render_template("index.html", all_posts=posts, current_user=current_user)
