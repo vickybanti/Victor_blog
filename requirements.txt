@@ -23,6 +23,5 @@ WTForms==3.0.1
 email-validator
 psycopg2-binary
 passlib==1.7.0
-gevent==1.2.1
 
 
